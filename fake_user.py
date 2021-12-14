@@ -1,11 +1,11 @@
 import random
 import sys
 from faker import Faker
+# generates fake data
 from bootstrap_table import db, User
 
 
 def create_fake_users(n):
-    """Generate fake users."""
     faker = Faker()
     for i in range(n):
         user = User(name=faker.name(),
